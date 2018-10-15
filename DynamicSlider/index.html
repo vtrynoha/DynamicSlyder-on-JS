@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic Slider</title>
+	<link rel="stylesheet" href="jquery-ui.css">
+	<style>	
+		#number {
+			font-family: Arial;
+			font-weight: bold;
+			font-size: 36pt;
+			text-align: center;			
+		}
+	</style>
+	<script src="jquery-1.9.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script>
+		$(function() {
+		$( "#progressbar" ).progressbar({
+			value: 0
+			});
+		});
+	</script>	
+</head>
+
+<body>
+	<div id="number">0%</div>
+	<div id="progressbar"></div>
+	<script>
+		setInterval(function() {
+			$.ajax({			
+				url: "http://127.0.0.1:1991/",			
+				success: function(msg){					
+					number.innerHTML = msg + "%";
+					$( "#progressbar" ).progressbar({value: parseInt(msg)});	
+				},			
+			});
+		}, 2000);
+	</script>
+</body>
+</html>
