@@ -2,6 +2,7 @@
 DynamicSlyder on Java Script with jQuery and Node.js
 
 This is my version of the task:
+
 Create simple server side application in preferable technology (node.js or other) which generates a random number for each new request.
 
 Create a client-side application (javascript with any preferable framework) which makes a request to the server-side application, gets the randomly generated number and uses it to dynamically update Web UI.
