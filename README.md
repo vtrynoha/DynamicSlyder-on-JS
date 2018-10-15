@@ -1,7 +1,7 @@
+This is my version of the task:
+
 # DynamicSlyder-on-JS
 DynamicSlyder on Java Script with jQuery and Node.js
-
-This is my version of the task:
 
 Create simple server side application in preferable technology (node.js or other) which generates a random number for each new request.
 
